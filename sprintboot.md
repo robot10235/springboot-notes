@@ -87,3 +87,39 @@ useful arguments
 @RequestParam
 
 if the parameter name is different, map it to self-defined argument
+
+
+
+
+
+### advanced
+
+#### static
+
+static resources like photos store in `projectName/src/main/resources/static` in default.
+
+can be visited in `localhost:8080/test.jpg`
+
+want to place the photo not in the root directory but in a new directory, need to add `spring.mvc.static-path-pattern=/images/**` to the `application.properties` file.
+
+
+
+#### upload files
+
+`enctype` means how to encode the file data
+
+file should have `enctype="multipart/form-data"` to be uploaded successfully.
+
+default uploaded file maximum size is 1Mb
+
+can be changed in `application.properties` file.
+
+upload files can be stored in a self-defined directory, we can modify the config file to change the static resources path to it to visit uploaded files
+
+
+
+#### interceptor
+
+when clients try to visit specific directory, server will know immediately
+
+need to use a config class to register the interceptor
