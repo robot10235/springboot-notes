@@ -192,3 +192,27 @@ delete http://localhost/user/10
 #### Swagger
 
 gui for RESTful 
+
+
+
+
+
+
+
+### ORM
+
+Object Relational Mapping
+
+help java object mapping to database table
+
+
+
+#### MyBatis
+
+ORM Framework
+
+
+
+mybatis plus: do not need to write the interfaces
+
+`extends BaseMapper` is enough
