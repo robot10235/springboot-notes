@@ -123,3 +123,72 @@ upload files can be stored in a self-defined directory, we can modify the config
 when clients try to visit specific directory, server will know immediately
 
 need to use a config class to register the interceptor
+
+
+
+
+
+### RESTful
+
+Representational State Transfer
+
+client should use GET POST PUT DELETE to operate the resource in server
+
+resource file is JSON or HTML
+
+stateless client-server communication
+
+
+
+#### HTTP method
+
+1. POST
+2. GET
+3. PUT
+4. PATCH
+5. DELETE
+
+different return values to notify front-end
+
+
+
+status code
+
+- [Informational responses](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#information_responses) (`100`–`199`)
+- [Successful responses](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#successful_responses) (`200`–`299`)
+- [Redirection messages](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#redirection_messages) (`300`–`399`)
+- [Client error responses](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#client_error_responses) (`400`–`499`)
+- [Server error responses](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#server_error_responses) (`500`–`599`)
+
+
+
+#### Spring Boot implement RESTful API
+
+annotation
+
+- @GetMapping
+- @PostMapping
+- @PutMapping
+- @DeleteMapping
+- @PatchMapping
+
+
+
+| HTTP   | ADDR     | INFO           |
+| ------ | -------- | -------------- |
+| POST   | /user    |                |
+| GET    | /user/id |                |
+| PUT    | /user    |                |
+| DELETE | /user/id | delete id user |
+
+delete user id: 10
+
+delete http://localhost/user/10
+
+
+
+
+
+#### Swagger
+
+gui for RESTful 
